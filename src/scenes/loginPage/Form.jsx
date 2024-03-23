@@ -79,7 +79,7 @@ const Form = () => {
   };
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch("https://mern-social-media-backend-ilsu.onrender.comauth/login", {
+    const loggedInResponse = await fetch("https://mern-social-media-backend-ilsu.onrender.com/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
