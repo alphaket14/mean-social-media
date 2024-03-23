@@ -46,7 +46,7 @@ const MyPostWidget = ({ picturePath }) => {
       formData.append("picturePath", image.name);
     }
 
-    const response = await fetch(`https://mern-social-media-backend-ilsu.onrender.composts`, {
+    const response = await fetch(`https://mern-social-media-backend-ilsu.onrender.com/posts`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,

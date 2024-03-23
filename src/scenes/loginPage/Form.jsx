@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "https://mern-social-media-backend-ilsu.onrender.comauth/register",
+      "https://mern-social-media-backend-ilsu.onrender.com/auth/register",
       {
         method: "POST",
         body: formData,
